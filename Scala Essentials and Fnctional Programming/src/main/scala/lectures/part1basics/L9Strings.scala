@@ -1,6 +1,7 @@
 package lectures.part1basics
 
 object L9Strings extends App {
+
   val str: String = "Hello, I am learning Scala"
 
   println(str.charAt(2))
@@ -11,14 +12,14 @@ object L9Strings extends App {
   println(str.toLowerCase())
   println(str.length)
 
-  // things new in scala
+  // Things new in Scala
   val aNumberString = "2"
   val aNumber = aNumberString.toInt
   println('a' +: aNumberString :+ 'z')
   println(str.reverse)
   println(str.take(2))
 
-  // Scala-specific: String interpolators.
+  // Scala-specific: String interpolators
 
   // S-interpolators
   val name = "David"
@@ -32,7 +33,7 @@ object L9Strings extends App {
   val myth = f"$name can eat $speed%2.2f burgers per minute"
   println(myth)
 
-  // raw-interpolator
+  // Raw-interpolator
   println(raw"This is a \n newline")
   val escaped = "This is a \n newline"
   println(raw"$escaped")
